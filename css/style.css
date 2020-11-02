@@ -22,6 +22,11 @@ body {
   text-decoration: none;
 }
 
+.about__heading--js {
+    padding-bottom: 20px;
+
+}
+
 .notes {
 }
 
