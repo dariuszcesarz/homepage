@@ -8,78 +8,86 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Strona Główna</a>
-        <a href="nauka.html">Nauka HTML</a>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+
+        <a class="navigation__link" href="nauka.html">Nauka HTML</a>
       </nav>
     </header>
-    <main>
-      <header>
-        <h1>Dariusz Cesarz - Strona Domowa</h1>
+    <main class="main">
+      <header class="main__header" id="top">
+        <h1 clas="main__heading main__heading--title">
+          Dariusz Cesarz - Strona Domowa
+        </h1>
       </header>
-      <section id="notatki">
-        <h2>O czym będzie blog?</h2>
-        <p>
+      <section class="about">
+        <h2 class="about__heading">O czym będzie blog?</h2>
+        <img class="about__picture" src="img/frontend.png" alt="FrontEnd" />
+
+        <p class="about__description">
           Będe tutaj opisywał czego się nauczyłem. Na samym początku chcę skupić
           się na podstawowych rzeczach, takich jak znaczniki w HTML, następnie
           będe edukował się z zakresu CSS, JS. Chcę uczyć się tych trzech rzeczy
           jednocześnie i implementować nauczone rzeczy w praktyce. Z pomocą
-          przychodzi mi kurs WTF Co Ten FrontEnd, którego twórcą jest Maciek
-          Korsan.
+          przychodzi mi kurs
+          <a class="about__link" href="#">WTF! Co Ten FrontEnd</a>, którego
+          twórcą jest Maciek Korsan.
         </p>
       </section>
 
-      <section>
-          <h2>Notatki z kursu</h2>
-          <article>
-        <h3>Podstawy HTML</h3>
-        <p>
-          HTML (HyperText Markup Language) jest najbardziej podstawowym
-          elementem składowym sieci Web. Definiuje on znaczenie i strukturę
-          treści stron internetowych. Inne technologie poza HTML są używane do
-          opisu wyglądu/prezentacji strony internetowej (CSS) lub
-          funkcjonalności/zachowania (JavaScript). "Hipertekst" (HyperText)
-          odnosi się do linków łączących ze sobą strony internetowe, zarówno w
-          obrębie jednej strony internetowej, jak i pomiędzy różnymi stronami
-          internetowymi. Linki są podstawowym aspektem sieci Web. Umieszczając
-          treści w Internecie i linkując je do stron stworzonych przez inne
-          osoby, stajesz się aktywnym uczestnikiem sieci World Wide Web.
-        </p>
-    </article>
-    <article>
-        <h3>O CSS słów kilka</h3>
-        <p>
-          Kaskadowe arkusze stylów (CSS) są językiem stylów używanym do opisania
-          warstwy prezentacji dokumentów napisanych w HTML lub XML (włączając
-          pochodne SVG czy XHTML). CSS opisuje jak elementy powinny być
-          prezentowane na ekranie, przy wydruku, w czytniku ekranowym, albo w
-          innych mediach. CSS jest jednym z podstawowych języków otwartej sieci
-          i jest ustandaryzowany pomiędzy przeglądarkami zgodnie ze specyfikacją
-          W3C. Rozwijany stopniowo, CSS1 obecnie przestarzały , CSS2.1
-          rekomendowany, oraz CSS3, obecnie rozbity na mniejsze moduły w ciągłym
-          procesie standaryzacji.
-        </p>
-    </article>
-    <article>
-        <h3>Specyfikacja CSS</h3>
-        <p>
-          Specyfikacja CSS zawiera wszystkie standardowe właściwości CSS, w tym
-          pseudo-klas i pseudo-elementow, zasad używania znaku @, i selektorów w
-          porządku alfabetycznym. Taka organizacja specyfikacji pozwala na
-          szybki dostęp do szczegółowych informacji o każdym elemencie
-          specyfikacji. Specyfikacja CSS nie tylko opisuje ustandaryzowane
-          właściwości CSS1 i CSS2.1, ale odnosi się również do specyfikacji
-          najnowszej wersji - CSS3, zarówno elementów w fazie koncepcji jak i
-          elementów zatwierdzonych. Zobacz także rozszerzenie CSS Mozilli
-          skonstrułowanych dla programów opartych na Gecko, z prefiksem -moz;
-          oraz rozszerzenia CSS WebKit dla programów opartych na tym silniku.
-          Sprawdź zestawienie właściwości wszystko prefiksów CSS autorstwa
-          Petera Beverloo.
-        </p>
-    </article>
+      <section class="notes" id="notatki"> 
+        <h2 class="notes__heading">Notatki z kursu</h2>
+        <article class="week-summary">
+          <h3 class="week-summary__title">Podstawy HTML</h3>
+          <p class="week-sumarry__description">
+            HTML (HyperText Markup Language) jest najbardziej podstawowym
+            elementem składowym sieci Web. Definiuje on znaczenie i strukturę
+            treści stron internetowych. Inne technologie poza HTML są używane do
+            opisu wyglądu/prezentacji strony internetowej (CSS) lub
+            funkcjonalności/zachowania (JavaScript). "Hipertekst" (HyperText)
+            odnosi się do linków łączących ze sobą strony internetowe, zarówno w
+            obrębie jednej strony internetowej, jak i pomiędzy różnymi stronami
+            internetowymi. Linki są podstawowym aspektem sieci Web. Umieszczając
+            treści w Internecie i linkując je do stron stworzonych przez inne
+            osoby, stajesz się aktywnym uczestnikiem sieci World Wide Web.
+          </p>
+        </article>
+        <article class="week-summary week-summary__special">
+          <h3 class="week-summary__title">O CSS słów kilka</h3>
+          <p class="week-summary__description">
+            Kaskadowe arkusze stylów (CSS) są językiem stylów używanym do
+            opisania warstwy prezentacji dokumentów napisanych w HTML lub XML
+            (włączając pochodne SVG czy XHTML). CSS opisuje jak elementy powinny
+            być prezentowane na ekranie, przy wydruku, w czytniku ekranowym,
+            albo w innych mediach. CSS jest jednym z podstawowych języków
+            otwartej sieci i jest ustandaryzowany pomiędzy przeglądarkami
+            zgodnie ze specyfikacją W3C. Rozwijany stopniowo, CSS1 obecnie
+            przestarzały , CSS2.1 rekomendowany, oraz CSS3, obecnie rozbity na
+            mniejsze moduły w ciągłym procesie standaryzacji.
+          </p>
+        </article>
+        <article class="week-summary">
+          <h3 class="week-summary__title">Specyfikacja CSS</h3>
+          <p class="week-summary__description">
+            Specyfikacja CSS zawiera wszystkie standardowe właściwości CSS, w
+            tym pseudo-klas i pseudo-elementow, zasad używania znaku @, i
+            selektorów w porządku alfabetycznym. Taka organizacja specyfikacji
+            pozwala na szybki dostęp do szczegółowych informacji o każdym
+            elemencie specyfikacji. Specyfikacja CSS nie tylko opisuje
+            ustandaryzowane właściwości CSS1 i CSS2.1, ale odnosi się również do
+            specyfikacji najnowszej wersji - CSS3, zarówno elementów w fazie
+            koncepcji jak i elementów zatwierdzonych. Zobacz także rozszerzenie
+            CSS Mozilli skonstrułowanych dla programów opartych na Gecko, z
+            prefiksem -moz; oraz rozszerzenia CSS WebKit dla programów opartych
+            na tym silniku. Sprawdź zestawienie właściwości wszystko prefiksów
+            CSS autorstwa Petera Beverloo.
+          </p>
+        </article>
       </section>
-      <footer>&copy; Dariusz Cesarz Nauka</footer>
+      <footer>&copy; Dariusz Cesarz Nauka <a class="footer__link" href="#top"> Wróć na Górę</a></a><footer>
     </main>
     <script src="js/main.js"></script>
   </body>

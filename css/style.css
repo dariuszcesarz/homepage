@@ -1,11 +1,70 @@
-h1 {
-    color: red;
-}
-
-h2 {
-    color: #1460AA;
-}
-
 body {
-    background: #fefefe;
+  background: #fefefe;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main__heading {
+  color: #92140c;
+}
+
+.about {
+}
+
+.about__heading {
+  color: #1460aa;
+}
+.about__link {
+  color: #92140c;
+  text-decoration: none;
+}
+
+.notes {
+}
+
+.navigation {
+  background: #fd9800;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.navigation__link {
+  color: #fff;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.notes__heading {
+  color: #1460aa;
+}
+
+.footer {
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.footer__link {
+  color: blue;
+  text-decoration: none;
+}
+
+.week-summary {
+  padding: 16px;
+  border: 1px #ccc solid;
+  margin-bottom: 16px;
+}
+
+.week-summary__special {
+  border: 1px #92140c solid;
+}
+
+.week-summary__description {
+  color: #92140c;
+}
+
+.week-summary__title {
+  color: #21a179;
 }
